@@ -1,4 +1,3 @@
-import json
 import os
 
 from django.conf import settings
@@ -16,17 +15,7 @@ def load_js():
         return fp.read()
 
 
-def load_images():
-    filepath = os.path.join(os.path.dirname(__file__), "images.json")
-    with open(filepath, "r") as fp:
-        images_dict = json.load(fp)
-        return images_dict["urls"]
-
-
 class KaraageMiddleware(object):
-    def process_request(self, request):
-        pass
-
     def process_response(self, request, response):
         content = response.content
 

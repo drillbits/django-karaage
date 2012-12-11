@@ -3,16 +3,47 @@
 <head>
 <meta charset='UTF-8' />
 <title>django-karaage::Sample</title>
+<style>
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    padding: 5px;
+}
+h1 {
+    background-color: #CCC;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+#main {
+    border: #999 solid 1px;
+    padding: 5px;
+}
+h2 {
+    background-color: #CCC;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+#main p {
+    padding: 5px;
+}
+ul {
+    border: #999 dashed 1px;
+    padding: 5px 15px;
+}
+li {
+    list-style-position: inside;
+}
+</style>
 </head>
 <body>
 
 <h1>django-karaage::Sample</h1>
 
-<div>
+<div id="main">
 <h2>What's this?</h2>
 <p>django-karaage is a middleware to cook Karaage on django.</p>
-</div>
-
 <ul>
 <li><a href="jwcinrawiehrvacwjrhawie">404 page</a></li>
 <li>
@@ -22,6 +53,7 @@ url: <input type="text" name="url" size="50" value="http://www.yahoo.com/"/>
 </form>
 </li>
 </ul>
+</div>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
   global[moduleName] = module;
 })((function(global, undefined) {
   var karaage = {
-    image_url: 'https://dl.dropbox.com/u/28743389/karaage.jpg',
+    image_url: 'http://dl.dropbox.com/u/28743389/karaage.jpg',
 
     _main: function() {
       var image_url = karaage.image_url,
@@ -18,12 +18,11 @@
           '<div style="'
           + 'position:relative;'
           + 'border:solid 1px silver;'
-          + 'background-color:#CCCCCC;'
           + 'height:192px;'
           + 'background-image:url(' + image_url + ');'
           + 'background-position:left top;'
           + 'background-repeat:repeat;'
-          + 'margin-bottom: 0.5em !important;"></div>'
+          + '"></div>'
         );
 
         $(targets[i]).prepend(elem);
@@ -58,6 +57,7 @@
         }
       });
 
+      /*
       $('h1,h2,h3,h4,h5,h6,h7').each(function() {
         var self = this,
             rect = self.getBoundingClientRect();
@@ -70,6 +70,7 @@
           targets.push(self);
         }
       });
+      */
 
       return targets;
     },
