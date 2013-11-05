@@ -25,7 +25,7 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     author="drillbits",
-    author_email="drillbits.spiny@gmail.com",
+    author_email="neji@drillbits.jp",
     url="",
     keywords="web django karaage",
     packages=find_packages(),
